@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "evt-001",
+    "timestamp": "2026-04-01T10:00:00Z",
+    "event_type": "prediction",
+    "payload": {
+      "model_id": "fraud-detector-v1",
+      "features": {"amount": 120.5, "hour_of_day": 10.0, "merchant_risk": 0.2},
+      "prediction": 0.0,
+      "latency_ms": 45.0,
+      "outcome": 0.0
+    }
+  },
+  {
+    "event_id": "evt-002",
+    "timestamp": "2026-04-01T10:05:00Z",
+    "event_type": "prediction",
+    "payload": {
+      "model_id": "fraud-detector-v1",
+      "features": {"amount": 980.0, "hour_of_day": 2.0, "merchant_risk": 0.9},
+      "prediction": 1.0,
+      "latency_ms": 62.0,
+      "outcome": 1.0
+    }
+  },
+  {
+    "event_id": "evt-003",
+    "timestamp": "2026-04-01T10:10:00Z",
+    "event_type": "prediction",
+    "payload": {
+      "model_id": "fraud-detector-v1",
+      "features": {"amount": 55.0, "hour_of_day": 14.0, "merchant_risk": 0.1},
+      "prediction": 0.0,
+      "latency_ms": 38.0,
+      "outcome": 0.0
+    }
+  },
+  {
+    "event_id": "evt-004",
+    "timestamp": "2026-04-29T10:00:00Z",
+    "event_type": "prediction",
+    "payload": {
+      "model_id": "fraud-detector-v1",
+      "features": {"amount": 4500.0, "hour_of_day": 3.0, "merchant_risk": 0.95},
+      "prediction": 0.0,
+      "latency_ms": 720.0,
+      "outcome": 1.0
+    }
+  }
+]

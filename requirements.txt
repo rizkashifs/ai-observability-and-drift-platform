@@ -1,0 +1,8 @@
+prometheus-client
+evidently
+pandas
+numpy
+pydantic
+pyyaml
+fastapi
+pytest

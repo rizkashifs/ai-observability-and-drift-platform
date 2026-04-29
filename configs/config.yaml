@@ -1,0 +1,10 @@
+project:
+  name: ai-observability-and-drift-platform
+monitoring:
+  latency_slo_ms: 500
+  error_rate_threshold: 0.01
+drift:
+  enabled: true
+  baseline_window_days: 30
+alerts:
+  channel: placeholder

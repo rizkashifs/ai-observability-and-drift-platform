@@ -1,6 +1,6 @@
 # ai-observability-and-drift-platform
 
-An observability and drift monitoring platform blueprint for machine learning and LLM-powered systems.
+This repository defines an opinionated observability and drift monitoring platform for machine learning and LLM-powered systems — because model quality degrades silently, and traditional application monitoring will not catch it.
 
 ## Description
 
@@ -13,6 +13,20 @@ It is intentionally documentation-first and contains only placeholder files. The
 Enterprise AI needs production reliability. Traditional application monitoring is not enough because model quality can decline even when services remain healthy. Teams need a combined view of technical health, data health, model quality, LLM quality, and business impact.
 
 This project helps organizations design an observability layer that supports incident response, model governance, retraining decisions, and executive reporting.
+
+## What to Monitor
+
+- Data drift
+- Prediction distribution shifts
+- Latency and errors
+- LLM usage patterns
+
+## Design Principles
+
+- Standardization over ad-hoc pipelines
+- Observability as a first-class concern
+- Reproducibility over experimentation speed
+- Clear separation of concerns across lifecycle stages
 
 ## High-Level Architecture
 
@@ -94,3 +108,16 @@ ai-observability-and-drift-platform/
 - Add service-level objective definitions.
 - Add alert routing and incident workflow examples.
 - Add dashboards for model health, data health, LLM quality, and cost.
+
+## Part of AI Platform
+
+This repository is part of a modular AI platform:
+
+- [ds-mlops-enterprise-system](https://github.com/rizkashifs/ds-mlops-enterprise-system) → defines standards and best practices
+- [mlops-control-plane](https://github.com/rizkashifs/mlops-control-plane) → manages model lifecycle and governance
+- [enterprise-rag-agent-system](https://github.com/rizkashifs/enterprise-rag-agent-system) → GenAI application layer
+- [hybrid-ds-genai-agentic-mlops-system](https://github.com/rizkashifs/hybrid-ds-genai-agentic-mlops-system) → ML + LLM + agentic workflows
+- [ai-observability-and-drift-platform](https://github.com/rizkashifs/ai-observability-and-drift-platform) → monitoring and reliability
+- [multi-model-routing-engine](https://github.com/rizkashifs/multi-model-routing-engine) → model selection and optimization
+
+These repositories together represent an enterprise-grade AI system.
